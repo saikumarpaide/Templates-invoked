@@ -1,0 +1,3 @@
+ curl -X POST http://localhost:7007/api/webhook-on-import/send-yaml \
+     -H "Content-Type: application/json" \
+     -d '{"yaml": "apiVersion: backstage.io/v1alpha1\nkind: Component\nmetadata:\n  name: my-service\n  description: My awesome service\n  tags:\n    - backend\n    - nodejs\n  annotations:\n    github.com/project-slug: my-org/my-service\nspec:\n  type: service\n  lifecycle: production\n  owner: team-dev\n  providesApis:\n    - my-api"}'
