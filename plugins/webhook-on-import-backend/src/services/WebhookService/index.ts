@@ -1,0 +1,1 @@
+export { sendYamlToWebhook } from './webhookService';
